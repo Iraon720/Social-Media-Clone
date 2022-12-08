@@ -25,7 +25,7 @@ body {
   box-sizing: border-box;
 }
 .greeting {
-  background-image: url(express4.jpeg);
+  background-image: url(./assets/express4.jpeg);
   background-size: cover;
   background-repeat: repeat-y;
   background-repeat: repeat-x;

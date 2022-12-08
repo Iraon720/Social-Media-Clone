@@ -13,45 +13,43 @@ h1 {
   background: linear-gradient(#1b243c, #db9657);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-
 }
-body{
+body {
   background: radial-gradient(circle at center, #fbb95b 0px, #1b243c 100px);
-  }
-  .profile-card{
-    font-family: 'Red Rose', cursive;
-    line-height: 19px;
-    font-weight: 400px;
-    color: #ED9E57;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-  }
+}
+.profile-card {
+  font-family: 'Red Rose', cursive;
+  line-height: 19px;
+  font-weight: 400px;
+  color: #ed9e57;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
 
-  .profile-pic{
-    width: 160px;
-    height: 80px;
-    border-radius: 50%;
-  }
-  .pc{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:space-around;
-
-  }
-  select{
-    font-family: 'Red Rose', cursive;
-    color:#82c1e4;
-    border-radius: 10px;
-    border: none;
-    background-color: #1b243c;
-    text-align: center;
-    overflow:hidden
-    width: 15px;
-    padding: 4px;
-  }
+.profile-pic {
+  width: 160px;
+  height: 80px;
+  border-radius: 50%;
+}
+.pc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+select {
+  font-family: 'Red Rose', cursive;
+  color: #82c1e4;
+  border-radius: 10px;
+  border: none;
+  background-color: #1b243c;
+  text-align: center;
+  overflow: hidden;
+  width: 15px;
+  padding: 4px;
+}
 footer {
   word-spacing: 3rem;
   color: white;
@@ -63,34 +61,26 @@ footer {
 span {
   color: #82c1e4;
 }
-.post{
+.post {
   border-radius: 10px;
   width: 332px;
   height: 215px;
-
 }
-.feed-profile{
-   width: 50px;
-    height: 60px;
-    border-radius: 50%;
-
-
+#feed-profile {
+  width: 50px;
+  height: 60px;
+  border-radius: 50%;
 }
-.profile1{
-  display: flex;
-  flex-direction: column;
-  align-content: center;;
-  
 
-}
-.profile2{
+.profile {
   display: flex;
   flex-direction: column;
   align-content: center;
-
 }
-.profile3{
- display: flex;
-  flex-direction: column;
-  align-content: center;
+
+#profile1 {
+}
+#profile2 {
+}
+#profile3 {
 }

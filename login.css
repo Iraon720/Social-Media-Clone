@@ -18,7 +18,7 @@ body {
   background: radial-gradient(circle at center, #fbb95b 0px, #1b243c 100px);
 }
 .container {
-  background-image: url(./expressivelo.webp);
+  background-image: url(/assets/expressivelo.webp);
   background-size: cover;
   backdrop-filter: blur(12px);
 
