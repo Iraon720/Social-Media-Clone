@@ -15,14 +15,19 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 body {
-  background: radial-gradient(circle at center, #fbb95b 0px, #1b243c 100px);
+  background-image: url(./welcome\ b\ .webp);
 }
-.container {
-  background-image: url(./expressivelo.webp);
-  background-size: cover;
-  backdrop-filter: blur(12px);
-
-  background-position: 50% 30%;
+.calling {
+  font-family: 'Red Rose', cursive;
+  font-weight: 300px;
+  font-style: oblique !important;
+  font-size: 24px;
+  line-height: 29.98px;
+  color: white;
+  line-height: 100%;
+  vertical-align: top;
+}
+form {
   margin: 205px 62px 268px 56px;
   display: flex;
   align-items: inside;
@@ -34,46 +39,35 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-.calling {
-  font-family: 'Red Rose', cursive;
-  font-weight: 300px;
-  font-style: oblique !important;
-  font-size: 24px;
-  line-height: 29.98px;
-  color: white;
-  text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
-  line-height: 100%;
-  vertical-align: top;
-}
-label {
-  font-family: 'Red Rose', cursive;
-  color: #347af6;
-  font-weight: 300;
-  font-size: 15px;
-  line-height: 17.5px;
-  text-align: center;
-}
-.lf {
-  font-family: 'Red Rose', cursive;
+.forms {
+  font-family: 'Poppins', sans-serif;
   background-color: black;
+  color: white;
   border-radius: 10px;
   width: 200px;
   height: 20px;
   border-color: black;
   top: 385px;
 }
-button {
+.forms::placeholder {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+button,
+button:hover {
   font-weight: bold !important;
   background-color: black;
   color: white;
   border-radius: 20px;
-  border-color: black;
+  border: none;
   padding: 0.5rem;
   width: 219px;
   cursor: pointer;
 }
 button:hover {
-  background-color: #db9657;
+  background-color: #82c1e4;
 }
 
 footer {
@@ -82,12 +76,8 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  bottom: 0px;
 }
-.form,
 span {
-  font-family: 'Roboto', sans-serif;
   color: #82c1e4;
-  font-size: 15px;
-  font-style: normal;
-  line-height: 15px;
 }

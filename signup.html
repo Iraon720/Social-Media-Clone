@@ -4,18 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="signup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Red+Rose&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quando&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Red+Rose:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <title>Expressive/signup</title>
   </head>
-  <body class="sub" background="./welcome b .webp">
+  <body>
     <h1>Expressive!</h1>
-    <form class="su">
-      <p>
+    <form>
+      <p class="calling">
         Ready to Join? Fill out credentials below and
         <strong>Lets Get Expressive!</strong>
       </p>
 
       <input
-        style="width: auto"
+        class="forms"
         type="text"
         id="Email"
         name="Username"
@@ -27,6 +46,7 @@
       <br />
       <br />
       <input
+        class="forms"
         autocapitalize="off"
         autocorrect="off"
         name="password"
@@ -40,6 +60,7 @@
       <br />
       <br />
       <input
+        class="forms"
         autocapitalize="off"
         autocorrect="off"
         name="password"
@@ -53,6 +74,7 @@
       <br />
       <br />
       <input
+        class="forms"
         autocapitalize="off"
         autocorrect="off"
         name="username"
@@ -69,15 +91,15 @@
         <button class="signup" aria-disabled="true">Sign Up</button>
       </a>
 
-      <p class="form">
+      <p>
         Already have account?
         <a href="login.html" role="link"><span>Log in.</span></a>
       </p>
     </form>
   </body>
   <footer>
-    Expressive!2023 More Help
-    <label for="lang-multi">Language</label>
+    <span>Expressive!2023</span> More Help
+    <label for="lang-multi" class="lang">Language</label>
     <select id="lang-multi" aria-label="Switch Display Language" class="lang">
       <option value="af">Afrikaans</option>
       <option value="cs">Čeština</option>

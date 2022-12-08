@@ -37,7 +37,13 @@ body {
   color: white;
   text-align: center;
   display: flex;
+  padding: 20rem;
 }
+/* #greet{
+  position: absolute;
+  bottom: ;
+} */
+
 .express {
   /* display: flex;
   flex-direction: row;
@@ -66,9 +72,19 @@ button {
   border-color: black;
   padding: 0.5rem;
   width: 219px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #db9657;
 }
 footer {
+  word-spacing: 3rem;
+  color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+span {
+  color: #82c1e4;
 }
