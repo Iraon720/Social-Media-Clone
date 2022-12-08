@@ -1,0 +1,33 @@
+h1 {
+  font-family: 'Quando', serif;
+  font-weight: 400;
+  font-size: 48px;
+  letter-spacing: -0.24px;
+  vertical-align: top;
+  line-height: 60px;
+  text-align: center;
+  background: linear-gradient(#1b243c, #db9657);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body {
+  background: radial-gradient(circle at center, #fbb95b 0px, #1b243c 100px);
+}
+.container {
+  background-image: url(./expressivelo.webp);
+  background-position: 50% 30%;
+  margin: 205px 62px 268px 56px;
+  display: flex;
+  align-items: inside;
+  border-radius: 24px;
+  overflow: hidden;
+}
+footer {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+span {
+  color: #82c1e4;
+}
