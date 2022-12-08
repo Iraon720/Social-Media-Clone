@@ -1,0 +1,52 @@
+* {
+  font-family: 'Red Rose', cursive;
+  font-size: 20px;
+}
+html {
+  max-width: 780px;
+  min-width: 375px;
+}
+body {
+  margin: auto;
+  padding: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.greeting {
+  background-image: url(express4.jpeg);
+  background-size: cover;
+  background-repeat: repeat-y;
+  background-repeat: repeat-x;
+  background-size: height 385px, width 433px;
+  border-radius: 15px;
+  border: none solid;
+  font-weight: 400;
+  line-height: 24.98px;
+  color: white;
+  text-align: center;
+  display: flex;
+}
+.express {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 100px;
+}
+.exists {
+  color: #e4b2b3;
+}
+.create {
+  color: #82c1e4;
+}
+button {
+  background-color: black;
+  color: white;
+  border-radius: 20px;
+  border-color: black;
+  padding: 0.5rem;
+  width: 219px;
+}
+.buttons {
+  display: flex;
+  flex-direction: ;
+}
