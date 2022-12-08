@@ -69,6 +69,14 @@ button:hover {
 button:hover {
   background-color: #82c1e4;
 }
+.user,
+a {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  font-size: 15px;
+  font-style: normal;
+  line-height: 15px;
+}
 
 footer {
   word-spacing: 3rem;
