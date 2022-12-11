@@ -1,7 +1,3 @@
-html {
-  max-width: 780px;
-  min-width: 375px;
-}
 h1 {
   font-family: 'Quando', serif;
   font-weight: 400;
@@ -15,13 +11,19 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 body {
-  background: radial-gradient(circle at center, #fbb95b 0px, #1b243c 100px);
+  height: 100%;
+  background-image: radial-gradient(
+    circle at center,
+    #fbb95b 0px,
+    #1b243c 100px
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.container {
+.container-img {
   background-image: url(/assets/expressivelo.webp);
   background-size: cover;
-  backdrop-filter: blur(12px);
-
   background-position: 50% 30%;
   margin: 205px 62px 268px 56px;
   display: flex;
@@ -34,7 +36,8 @@ body {
   align-items: center;
   justify-content: space-around;
 }
-.calling {
+
+.container-form {
   font-family: 'Red Rose', cursive;
   font-weight: 300px;
   font-style: oblique !important;
@@ -52,6 +55,7 @@ label {
   font-size: 15px;
   line-height: 17.5px;
   text-align: center;
+  padding-right: 3rem;
 }
 .lf {
   font-family: 'Red Rose', cursive;
@@ -61,6 +65,7 @@ label {
   height: 20px;
   border-color: black;
   top: 385px;
+  color: white;
 }
 button {
   font-weight: bold !important;
