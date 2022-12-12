@@ -11,7 +11,7 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 body {
-  background: radial-gradient(circle at center, #fbb95b 0px, #1b243c 100px);
+  background: radial-gradient(#fbb95b 0px, #1b243c 70%);
 }
 .profile-card {
   font-family: 'Red Rose', cursive;
@@ -67,8 +67,8 @@ span {
   height: 215px;
 }
 #feed-profile {
-  width: 50px;
-  height: 60px;
+  width: 80px;
+  height: 50px;
   border-radius: 50%;
 }
 
@@ -111,9 +111,9 @@ span {
     -webkit-text-fill-color: transparent;
   }
   body {
-    background: radial-gradient(circle at center, #fbb95b 0px, #1b243c 100px);
     height: 100%;
     width: 100%;
+    background-color: #1b243c;
   }
   .profile-card {
     font-family: 'Red Rose', cursive;
@@ -157,8 +157,8 @@ span {
     height: 215px;
   }
   #feed-profile {
-    width: 50px;
-    height: 60px;
+    width: 80px;
+    height: 50px;
     border-radius: 50%;
   }
 
