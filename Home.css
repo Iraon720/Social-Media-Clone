@@ -9,6 +9,7 @@ h1 {
   background: linear-gradient(#1b243c, #db9657);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: black 1px;
 }
 body {
   background-image: url(./assets/expressivelo.webp);
@@ -125,6 +126,7 @@ span {
     background: linear-gradient(#1b243c, #db9657);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: black 1px;
   }
   body {
     background-image: url(./assets/expressivelo.webp);

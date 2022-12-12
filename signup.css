@@ -38,6 +38,8 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  padding: 30%;
+ 
 }
 .forms {
   font-family: 'Poppins', sans-serif;
@@ -48,6 +50,7 @@ form {
   height: 20px;
   border-color: black;
   top: 385px;
+  
 }
 .forms::placeholder {
   font-family: 'Poppins', sans-serif;

@@ -9,14 +9,13 @@ h1 {
   background: linear-gradient(#1b243c, #db9657);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: black 1px;
 }
 body {
   height: 100%;
-  background-image: radial-gradient(
-    circle at center,
-    #fbb95b 0px,
-    #1b243c 100px
-  );
+  width: 100%;
+  background-image: radial-gradient(#fbb95b 0px, #1b243c 70%);
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -24,6 +23,7 @@ body {
 .container-img {
   background-image: url(/assets/expressivelo.webp);
   background-size: cover;
+
   background-position: 50% 30%;
   margin: 205px 62px 268px 56px;
   display: flex;
@@ -87,6 +87,8 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  border-top: #82c1e4 1px solid;
+  padding-top: 1.5rem;
 }
 .form,
 span {
@@ -95,4 +97,65 @@ span {
   font-size: 15px;
   font-style: normal;
   line-height: 15px;
+}
+#cards {
+  display: none;
+}
+@media only screen and (min-width: 780px) {
+  h1 {
+    font-family: 'Quando', serif;
+    font-weight: 400;
+    font-size: 48px;
+    letter-spacing: -0.24px;
+    vertical-align: top;
+    line-height: 60px;
+    text-align: center;
+    background: linear-gradient(#1b243c, #db9657);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: black 1px;
+  }
+  body {
+    height: 100vh;
+    background-image: radial-gradient(circle at center, #fbb95b 0, #1b243c 70%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  h2 {
+  }
+  #cards {
+    height: 100vh;
+    display: contents;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      'container-form container-form topic topic'
+      'container-form container-form card1 card2'
+      'container-form container-form card1 card2'
+      'container-form container-form card3 card4'
+      'container-form container-form card3 card4';
+  }
+  #card1,
+  #card2,
+  #card3,
+  #card4 {
+    border-radius: 24px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+  }
+
+  .container-img {
+    display: none !important;
+  }
+
+  footer {
+    word-spacing: 3rem;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
