@@ -9,6 +9,7 @@ h1 {
   background: linear-gradient(#1b243c, #db9657);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: black 1px;
 }
 body {
   background-image: url(./assets/welcome\ b\ .webp);
@@ -84,11 +85,15 @@ footer {
   flex-direction: row;
   justify-content: space-between;
   bottom: 0px;
+  border-top: #82c1e4 1px solid;
+  padding-top: 1.5rem;
 }
 span {
   color: #82c1e4;
 }
-@media only screen and (min-width: 780px) {
+
+}
+@media all and (min-width: 780px) {
   h1 {
     font-family: 'Quando', serif;
     font-weight: 400;
@@ -100,6 +105,7 @@ span {
     background: linear-gradient(#1b243c, #db9657);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: black 1px;
   }
   body {
     background-image: url(./assets/welcome\ b\ .webp);
@@ -170,14 +176,19 @@ span {
   }
 
   footer {
+  
     word-spacing: 3rem;
-    color: white;
+    color: #DB9657;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    bottom: 0px;
+    bottom: 0;
+    border-top: #DB9657 1px solid;
+    padding-top: 1.5rem;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
   }
-  span {
-    color: #82c1e4;
-  }
+  
+  
 }

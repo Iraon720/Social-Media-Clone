@@ -11,53 +11,72 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 body {
+  background-image: url(./assets/expressivelo.webp);
   font-family: 'Red Rose', cursive;
   font-size: 20px;
-}
-html {
-  max-width: 780px;
-  min-width: 375px;
-}
-body {
+  background-position: center;
+  background-size: cover;
   margin: auto;
   padding: auto;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 .greeting {
   background-image: url(./assets/express4.jpeg);
   background-size: cover;
-  background-repeat: repeat-y;
-  background-repeat: repeat-x;
-  background-size: height 385px, width 433px;
+  background-size: height 20%, width 30%;
+  position: relative;
   border-radius: 15px;
   border: none solid;
   font-weight: 400;
   line-height: 24.98px;
   color: white;
-  text-align: center;
-  display: flex;
+  height: 485px;
+  width: 433px;
+  margin-bottom: -10rem;
   padding: 20rem;
+  display: flex;
+  justify-content: flex-end;
 }
-/* #greet{
-  position: absolute;
-  bottom: ;
-} */
+#greet {
+  border: red solid 10px;
+  margin-top: 5rem;
+  padding: 2rem 2rem;
+  margin-top: auto;
+  width: 125px;
+  height: 85px;
+}
 
-.express {
-  /* display: flex;
+/* .express {
+  display: flex;
   flex-direction: row;
   position: relative;
-  top: 100px; */
+  top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
+} */
+.express1 {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  top: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: 4rem;
 }
-.express1 {
+.express2 {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  flex-direction: row;
+  position: relative;
+  top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4rem;
 }
 .exists {
   color: #e4b2b3;
@@ -87,4 +106,80 @@ footer {
 }
 span {
   color: #82c1e4;
+}
+#greeting-desktop,
+#desktop-images,
+#logo {
+  display: none;
+}
+@media only screen and (min-width: 780px) {
+  h1 {
+    font-family: 'Quando', serif;
+    font-weight: 400;
+    font-size: 48px;
+    letter-spacing: -0.24px;
+    vertical-align: top;
+    line-height: 60px;
+    text-align: right;
+    margin-top: -5px;
+    background: linear-gradient(#1b243c, #db9657);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  body {
+    background-image: url(./assets/expressivelo.webp);
+    background-position: center;
+    background-position-y: 25%;
+    background-size: cover;
+  }
+
+  body {
+    margin: auto;
+    padding: auto;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  #greeting-desktop {
+    background-image: url(./assets/express4.jpeg);
+    background-size: cover;
+    background-size: height 495px, width 1452px;
+    border-radius: 15px;
+    display: contents;
+    background: transparent;
+    font-family: 'Red Rose', cursive;
+    font-size: 24px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  .button-desktop {
+    border-radius: 8px;
+    color: white;
+    background: linear-gradient(#1b243c, #db9657);
+    width: 200px;
+    height: 102px;
+    font-size: 20px;
+  }
+  #desktop-images {
+    display: contents;
+    border-radius: 26px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+  }
+  .love {
+    width: 607px;
+    height: 231px;
+  }
+  .greeting,
+  #greet,
+  .express1,
+  .express2,
+  .exists,
+  .create {
+    display: none !important;
+  }
 }
