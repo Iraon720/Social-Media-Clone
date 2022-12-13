@@ -6,7 +6,7 @@ h1 {
   vertical-align: top;
   line-height: 60px;
   text-align: center;
-  background: linear-gradient(#1b243c, #db9657);
+  background: linear-gradient(#db9657, #82c1e4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: black 1px;
@@ -126,13 +126,23 @@ span {
   }
   .container-img,
   #container-form,
-  .lf,
-  button {
+  .lf {
     display: none;
+  }
+  .calling-desktop {
+    font-family: 'Red Rose', cursive;
+    font-weight: 300px;
+    font-style: oblique !important;
+    font-size: 24px;
+    line-height: 29.98px;
+    color: white;
+    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+    line-height: 100%;
+    vertical-align: top;
   }
   label {
     font-family: 'Red Rose', cursive;
-    color: #347af6;
+    color: #fdff02;
     font-weight: 300;
     font-size: 15px;
     line-height: 17.5px;
@@ -141,22 +151,39 @@ span {
   }
   .label-desktop {
     font-family: 'Red Rose', cursive;
-    color: #347af6;
+    color: #fdff02;
     font-weight: 300;
     font-size: 15px;
     line-height: 17.5px;
     text-align: center;
     padding-right: 3rem;
+    display: flex;
+    align-self: center;
   }
+
   .lf-desktop {
     font-family: 'Red Rose', cursive;
-    background-color: black;
-    border-radius: 10px;
-    width: 200px;
-    height: 20px;
-    border-color: black;
+    background-color: white;
+    border-radius: 5px;
+    width: 343px;
+    height: 48px;
+    border-color: white;
     top: 385px;
-    color: white;
+    color: black;
+  }
+  .lf-desktop::placeholder {
+    color: black;
+    font-family: 'Red Rose', cursive;
+  }
+  .button {
+    font-weight: bold !important;
+    background-color: #fdff02;
+    color: black;
+    border-radius: 20px;
+    border-color: #fdff02;
+    padding: 0.5rem;
+    width: 219px;
+    cursor: pointer;
   }
 
   #cards {
@@ -177,8 +204,7 @@ span {
   #desktop-form {
     align-items: center;
     padding-top: 60px;
-    border-right: #82c1e4 1px solid;
-    border-bottom 0px;
+    padding-left: 4rem;
 
     grid-area: desktop-form;
   }
@@ -216,9 +242,10 @@ span {
     border-radius: 24px;
   }
   #card3 img {
-    max-width: 473.65px;
-    max-height: 246px;
+    max-width: 600px;
+    max-height: 300px;
     border-radius: 24px;
+    padding-top: 3rem;
   }
 
   #card1,
@@ -229,6 +256,7 @@ span {
     text-align: center;
     font-family: 'Red Rose', cursive;
     color: white;
+    padding-right: 40px;
   }
 
   footer {
