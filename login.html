@@ -71,8 +71,48 @@
         </form>
       </div>
     </div>
+     
+
     <div  id="cards">
       <h2 id="topic">Trending Topics:</h2>
+      <div id="desktop-form">
+        <form>
+          <p class="calling">Login to start back getting Expressive!</p>
+          <label for="Email" class="label">Username or Email:</label>
+          <input
+            class="lf"
+            type="text"
+            id="Email"
+            name="Username"
+            minlength="5"
+            maxlength="35"
+            required
+          />
+          <br />
+          <br />
+          <label for="password" class="label">Password:</label>
+          <input
+            class="lf"
+            autocapitalize="off"
+            autocorrect="off"
+            name="password"
+            type="password"
+            class="password"
+            minlength="8"
+            maxlength="25"
+          />
+          <br />
+          <br />
+          <a href="/dashboard.html">
+            <button class="login" aria-disabled="true">Login</button>
+          </a>
+
+          <p class="form">
+            Don't have an account?
+            <a href="/signup.html" role="link"><span>Sign up</span></a>
+          </p>
+        </form>
+      </div>
       <div  id="card1">
         <img src="./assets/grizz.webp" alt="Ja">
         <figcaption> Ja Morant is the mid-season MVP averaging 31 points per game and 10 assists!</figcaption>
