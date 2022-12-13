@@ -143,11 +143,11 @@ span {
   }
 
   #greeting-desktop {
+    display: contents;
     background-image: url(./assets/express4.jpeg);
     background-size: cover;
-    background-size: height 495px, width 1452px;
+    /* background-size: height 495px, width 1452px; */
     border-radius: 15px;
-    display: contents;
     background: transparent;
     font-family: 'Red Rose', cursive;
     font-size: 24px;
