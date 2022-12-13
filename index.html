@@ -21,14 +21,30 @@
   </head>
   <body>
     <h1>Expressive!</h1>
-    <div class="greeting">
-      <div class="imgcontainer">
-        <img id="mobile-background" src="" />
+    <div id="mobileContainer">
+      <h1>Expressive!</h1>
+      <div class="greeting">
+        <img id="mobileImg" src="" alt="people holding message signs" />
+        <p id="greet">
+          Welcome to Expressive! Here you are free to come and be whoever you
+          are without any judgement. Join today and get Expressive!
+        </p>
       </div>
-      <p id="greet">
-        Welcome to Expressive! Here you are free to come and be whoever you are
-        without any judgement. Join today and get Expressive!
-      </p>
+      <!-- Buttons -->
+      <!-- <div class="express"> -->
+      <div class="express1">
+        <!-- <div class="buttons"> -->
+        <a href="/login.html">
+          <button>Login</button>
+        </a>
+        <p class="exists">Already have an account? Login below!</p>
+      </div>
+      <div class="express2">
+        <a href="/signup.html">
+          <button class="login">Get Started</button>
+        </a>
+        <p class="create">Create account</p>
+      </div>
     </div>
 
     <div id="greeting-desktop">
@@ -36,28 +52,13 @@
         Welcome to Expressive! Here you are free to come and be whoever you are
         without any judgement. Join today and get Expressive!
       </p>
-      <!-- Buttons -->
-      <a href="/login.html">
-        <button class="button-desktop">Login</button>
-      </a>
-      <a href="/signup.html">
-        <button class="button-desktop">Signup</button>
-      </a>
-    </div>
-
-    <!-- Buttons -->
-    <div class="express">
-      <div class="express1">
-        <p class="exists">Already have an account? Login below!</p>
-        <!-- <div class="buttons"> -->
+      <div id="desktopButtons">
+        <!-- Buttons -->
         <a href="/login.html">
-          <button>Login</button>
+          <button class="button-desktop">Login</button>
         </a>
-      </div>
-      <div class="express2">
-        <p class="create">Create account</p>
         <a href="/signup.html">
-          <button class="login">Get Started</button>
+          <button class="button-desktop">Signup</button>
         </a>
       </div>
     </div>

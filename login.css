@@ -159,13 +159,11 @@ span {
     color: white;
   }
 
-  h2 {
-  }
   #cards {
     height: 100vh;
     display: contents;
     display: grid;
-    /* column-gap: 50px; */
+    column-gap: 10px;
 
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
@@ -180,11 +178,17 @@ span {
     align-items: center;
     padding-top: 60px;
     border-right: #82c1e4 1px solid;
+    border-bottom 0px;
 
     grid-area: desktop-form;
   }
   #topic {
-    align-items: center;
+    color: #80bfe2;
+    align-self: center;
+    padding-left: 18rem;
+    font-size: 48px;
+    -webkit-text-stroke: black 1px;
+
     grid-area: topic;
   }
   #card1 {
@@ -223,6 +227,8 @@ span {
   #card4 {
     border-radius: 24px;
     text-align: center;
+    font-family: 'Red Rose', cursive;
+    color: white;
   }
 
   footer {
