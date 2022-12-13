@@ -37,7 +37,7 @@ body {
   justify-content: space-around;
 }
 
-.container-form {
+#container-form {
   font-family: 'Red Rose', cursive;
   font-weight: 300px;
   font-style: oblique !important;
@@ -116,39 +116,113 @@ span {
     -webkit-text-stroke: black 1px;
   }
   body {
+    overflow: scroll;
     height: 100vh;
+    width: 100%;
     background-image: radial-gradient(circle at center, #fbb95b 0, #1b243c 70%);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
   }
+  .container-img,
+  #container-form,
+  .lf,
+  button {
+    display: none;
+  }
+  label {
+    font-family: 'Red Rose', cursive;
+    color: #347af6;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 17.5px;
+    text-align: center;
+    padding-right: 3rem;
+  }
+  .label-desktop {
+    font-family: 'Red Rose', cursive;
+    color: #347af6;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 17.5px;
+    text-align: center;
+    padding-right: 3rem;
+  }
+  .lf-desktop {
+    font-family: 'Red Rose', cursive;
+    background-color: black;
+    border-radius: 10px;
+    width: 200px;
+    height: 20px;
+    border-color: black;
+    top: 385px;
+    color: white;
+  }
+
   h2 {
   }
   #cards {
     height: 100vh;
     display: contents;
     display: grid;
+    /* column-gap: 50px; */
+
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
-      'container-form container-form topic topic'
-      'container-form container-form card1 card2'
-      'container-form container-form card1 card2'
-      'container-form container-form card3 card4'
-      'container-form container-form card3 card4';
+      'desktop-form topic topic topic'
+      'desktop-form card1 card1 card2'
+      'desktop-form card1 card1 card2'
+      'desktop-form card3 card3 card4'
+      'desktop-form card3 card3 card4';
   }
+  #desktop-form {
+    align-items: center;
+    padding-top: 60px;
+    border-right: #82c1e4 1px solid;
+
+    grid-area: desktop-form;
+  }
+  #topic {
+    align-items: center;
+    grid-area: topic;
+  }
+  #card1 {
+    grid-area: card1;
+  }
+  #card2 {
+    grid-area: card2;
+  }
+  #card3 {
+    grid-area: card3;
+  }
+  #card4 {
+    grid-area: card4;
+  }
+
+  #card4 img,
+  #card1 img {
+    max-width: 397px;
+    max-height: 286px;
+    border-radius: 24px;
+  }
+  #card2 img {
+    max-width: 321px;
+    max-height: 260px;
+    border-radius: 24px;
+  }
+  #card3 img {
+    max-width: 473.65px;
+    max-height: 246px;
+    border-radius: 24px;
+  }
+
   #card1,
   #card2,
   #card3,
   #card4 {
     border-radius: 24px;
-    width: 50px;
-    height: 50px;
     text-align: center;
-  }
-
-  .container-img {
-    display: none !important;
   }
 
   footer {
