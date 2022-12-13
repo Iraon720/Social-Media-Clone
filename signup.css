@@ -6,7 +6,7 @@ h1 {
   vertical-align: top;
   line-height: 60px;
   text-align: center;
-  background: linear-gradient(#1b243c, #db9657);
+  background: linear-gradient(#db9657, #82c1e4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: black 1px;
@@ -105,7 +105,7 @@ span {
     vertical-align: top;
     line-height: 60px;
     text-align: center;
-    background: linear-gradient(#1b243c, #db9657);
+    background: linear-gradient(#db9657, #82c1e4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: black 1px;

@@ -93,9 +93,7 @@ span {
   padding: 0px 50px 50px 50px;
 }
 
-#profile4,
-#profile5,
-#profile6 {
+#desktop-container {
   display: none;
 }
 @media only screen and (min-width: 780px) {
@@ -117,7 +115,7 @@ span {
     width: 100%;
     background-color: #1b243c;
   }
-  .profile-card {
+  /* .profile-card {
     font-family: 'Red Rose', cursive;
     line-height: 19px;
     font-weight: 400px;
@@ -168,16 +166,51 @@ span {
     display: flex;
     flex-direction: column;
     align-content: center;
-  }
-  .container1 {
+  } */
+  /* .container1 {
     float: left;
   }
   .container2 {
     float: right;
+  } */
+
+  .profile-card {
+    display: contents;
   }
-  #profile4,
-  #profile5,
-  #profile6 {
+  #container-desktop {
+    grid-template-columns: 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-area: 'Sidebar' 'Sidebar' 'news' 'news' 'news' 'h1' 'h1' 'Sidebar'
+      'Sidebar' 'container1-desktop' 'container1-desktop' 'container1-desktop'
+      'container2-desktop' 'container2-desktop' 'Sidebar' 'Sidebar'
+      'container1-desktop' 'container1-desktop' 'container1-desktop'
+      'container2-desktop' 'container2-desktop' 'Sidebar' 'Sidebar'
+      'container1-desktop' 'container1-desktop' 'container1-desktop'
+      'container2-desktop' 'container2-desktop' 'Sidebar' 'Sidebar'
+      'container1-desktop' 'container1-desktop' 'container1-desktop'
+      'container2-desktop' 'container2-desktop' 'Sidebar' 'Sidebar'
+      'container1-desktop' 'container1-desktop' 'container1-desktop'
+      'container2-desktop' 'container2-desktop' 'Sidebar' 'Sidebar'
+      'container1-desktop' 'container1-desktop' 'container1-desktop'
+      'container2-desktop' 'container2-desktop';
+  }
+  #Sidebar {
+    grid-area: Sidebar;
+  }
+  #news {
+    grid-area: news;
+  }
+  h1 {
+    grid-area: h1;
+  }
+  #container1-desktop {
+    grid-area: container1;
+  }
+  #container2-desktop {
+    grid-area: container2;
+  }
+
+  #desktop-container {
     display: contents;
   }
   #profile1,
