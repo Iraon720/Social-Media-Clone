@@ -1,0 +1,45 @@
+Requirements:
+[G] Use Flexbox or Grid system layout for the basic structure of your elements
+[G] Be able to navigate to the different pages. For example, clicking on "Login" should bring me to the login page, filling out the information and clicking "login" should then lead me to the dashboard page. Then, clicking "logout" should bring me back to the home page.
+[G] You will have 4 pages that are responsive to screen sizes. Each page will include both mobile and desktop views.
+[G] Separate your CSS files by pages. Do NOT have one giant CSS file
+
+_ Hardcode any text and don't worry about getting information from somewhere else (...for now)
+_ You CAN use reusable components from Bootstrap
+_ If you want to make something different from your mockup, that's fine, just don't change too much without keeping track of your changes and modifying the mockup if need be.
+
+General
+_ clean file structure
+_ great job linking pgs together!
+
+dashboard.html
+_ responsive
+_ improvement: 
+  -> have all cards in single flex container
+  -> define min-width (px), max-width (px), and a relative width (80%)
+  -> center container with { margin: 0 auto; }
+  -> add wrap { flex-wrap: wrap; }
+  This should prevent the need to create and hid other containers based on the view.
+
+index.html (home)
+_ navigates to signup / login
+_ responsive
+_ flex layouts
+
+login.html 
+_ mobile 
+  -> scroll a bit to get to form
+  -> flex layout
+  -> (supposed to) link to dashboard.html when form is completed
+     -> does not work due to improper use of <a> and <button>
+     -> removed <button>, kept <a> and worked just fine
+_ desktop 
+  -> broken 
+  -> grid layout
+_ responsive
+
+signup.html 
+_ desktop -> need to scroll to get to form
+_ responsive
+_ flex layout in form
+_ links to login
