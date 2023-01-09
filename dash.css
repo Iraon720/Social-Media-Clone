@@ -120,22 +120,18 @@ span {
   .container1 {
     display: none;
   }
-  #container-desktop {
+  #desktop-container {
+    display: grid;
+    height: 100vh;
     grid-template-columns: 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-area: 'Sidebar' 'Sidebar' 'news' 'news' 'news' 'h1' 'h1' 'Sidebar'
-      'Sidebar' 'container1-desktop' 'container1-desktop' 'container1-desktop'
-      'container2-desktop' 'container2-desktop' 'Sidebar' 'Sidebar'
-      'container1-desktop' 'container1-desktop' 'container1-desktop'
-      'container2-desktop' 'container2-desktop' 'Sidebar' 'Sidebar'
-      'container1-desktop' 'container1-desktop' 'container1-desktop'
-      'container2-desktop' 'container2-desktop' 'Sidebar' 'Sidebar'
-      'container1-desktop' 'container1-desktop' 'container1-desktop'
-      'container2-desktop' 'container2-desktop' 'Sidebar' 'Sidebar'
-      'container1-desktop' 'container1-desktop' 'container1-desktop'
-      'container2-desktop' 'container2-desktop' 'Sidebar' 'Sidebar'
-      'container1-desktop' 'container1-desktop' 'container1-desktop'
-      'container2-desktop' 'container2-desktop';
+    grid-area: 'Sidebar Sidebar news news news h1 h1'
+      'Sidebar Sidebar c1d c1d c1d c2d c2d'
+      'Sidebar Sidebar c1d c1d c1d c2d c2d'
+      'Sidebar Sidebar c1d c1d c1d c2d c2d'
+      'Sidebar Sidebar c1d c1d c1d c2d c2d'
+      'Sidebar Sidebar c1d c1d c1d c2d c2d'
+      'Sidebar Sidebar c1d c1d c1d c2d c2d';
   }
   #Sidebar {
     grid-area: Sidebar;
@@ -146,11 +142,11 @@ span {
   h1 {
     grid-area: h1;
   }
-  #container1-desktop {
-    grid-area: container1;
+  #c1d {
+    grid-area: c1d;
   }
-  #container2-desktop {
-    grid-area: container2;
+  #c2d {
+    grid-area: c2d;
   }
 
   #desktop-container {
