@@ -64,8 +64,11 @@ span {
 }
 .post {
   border-radius: 10px;
-  width: 332px;
-  height: 215px;
+  width: 300px;
+  height: 150px;
+  background-color: #1b243c;
+  color: #db9657;
+  font-family: 'Red Rose', cursive;
 }
 #feed-profile {
   width: 80px;
@@ -96,7 +99,7 @@ span {
 #desktop-container {
   display: none;
 }
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 300px) {
   h1 {
     font-family: 'Quando', serif;
     font-weight: 400;
@@ -121,36 +124,24 @@ span {
     display: none;
   }
   #desktop-container {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 0.5fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-area: 'Sidebar Sidebar news news news h1 h1'
-      'Sidebar Sidebar c1d c1d c1d c2d c2d'
-      'Sidebar Sidebar c1d c1d c1d c2d c2d'
-      'Sidebar Sidebar c1d c1d c1d c2d c2d'
-      'Sidebar Sidebar c1d c1d c1d c2d c2d'
-      'Sidebar Sidebar c1d c1d c1d c2d c2d'
-      'Sidebar Sidebar c1d c1d c1d c2d c2d';
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
   }
-  #Sidebar {
-    grid-area: Sidebar;
-  }
-  #news {
-    grid-area: news;
-  }
-  h1 {
-    grid-area: h1;
-  }
-  #c1d {
-    grid-area: c1d;
-  }
-  #c2d {
-    grid-area: c2d;
+  #sidebar {
+    align-items: space-around;
   }
 
-  #desktop-container {
-    display: contents;
+  #news {
+  }
+  .allbtns {
+    border-radius: 8%;
+    background-color: #db9657;
+    color: #1b243c;
+    font-family: 'Red Rose', cursive;
+    font-size: 2fr;
+    border-color: #1b243c;
   }
   #profile1,
   #profile4 {

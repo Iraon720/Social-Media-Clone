@@ -1,19 +1,24 @@
 const User_URL =
   'https://twitter-clone-44098-default-rtdb.firebaseio.com/users';
 const EXT = '.json';
+const user = {
+  email: 'iraon720@gmail.com',
+  username: 'iraon720',
+};
+const retrieveUser = (param) => fetch(`${User_URL}/${param.username}${EXT}`);
 
 //Login Mobile
 const username = document.getElementById('Email');
 const password = document.getElementById('password');
 const loginBtnD = document.getElementById('login-btnD');
 
-// username.addEventListener('keyup', (e) => {
-//   console.log(username.value);
-// });
+username.addEventListener('keyup', (e) => {
+  console.log(username.value);
+});
 
-// password.addEventListener('keyup', (e) => {
-//   console.log(password.value);
-// });
+password.addEventListener('keyup', (e) => {
+  console.log(password.value);
+});
 
 //Validation
 function browserValidation() {
@@ -30,6 +35,7 @@ function handleLogin(e) {
 
   window.location.href = 'dashboard.html';
 }
+////////////
 
 //Login Desktop
 const usernameDsk = document.getElementById('Email-desktop');
@@ -52,9 +58,33 @@ function browserValidation() {
 }
 loginBtnD.addEventListener('click', handleLogin);
 
-function handleLogin(e) {
+async function handleLogin(e) {
   e.preventDefault();
   e.stopPropagation();
 
   window.location.href = 'dashboard.html';
+}
+const expressUser = {
+  username: username.value,
+  password: password.value,
+};
+try {
+  const validateError = browserValidation();
+  if (validateError) {
+    throw Error(validateError);
+  }
+  const userExists = await retrieve(expressUser);
+  if (!checkExistence.ok) {
+    throw Error('Error retrieving user');
+  }
+  const databaseExistence = await userExists.json();
+  if (!databaseExistence) {
+    throw Error('User does not exist');
+  }
+  if (databaseExistence) {
+    localStorage.setItem('userInfo', JSON.stringify(databaseExistence));
+    location.replace('/dashboard.html');
+  }
+} catch (error) {
+  alert(error);
 }

@@ -36,7 +36,7 @@
       <input
         class="forms"
         type="text"
-        id="Email"
+        id="Email-signup"
         name="Username"
         minlength="5"
         maxlength="35"
@@ -51,6 +51,7 @@
         autocorrect="off"
         name="password"
         type="password"
+        id="password-signup"
         class="password"
         minlength="8"
         maxlength="25"
@@ -64,6 +65,7 @@
         autocapitalize="off"
         autocorrect="off"
         name="password"
+        id="re-enter"
         type="password"
         class="password"
         minlength="8"
@@ -79,6 +81,7 @@
         autocorrect="off"
         name="username"
         type="text"
+        id="username-signup"
         class="username"
         minlength="5"
         maxlength="25"
@@ -87,15 +90,17 @@
       />
       <br />
       <br />
-      <a href="/dashboard.html">
-        <button class="signup" aria-disabled="true">Sign Up</button>
-      </a>
+
+      <button onclick="handleSignup()" type="button" class="signup">
+        Sign Up
+      </button>
 
       <p class="user">
         Already have account?
         <a href="/login.html" role="link">Log in.</a>
       </p>
     </form>
+    <script src="signup.js"></script>
   </body>
 
   <footer><span>Expressive!2023</span> More Help Language:English</footer>

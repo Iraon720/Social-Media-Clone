@@ -1,35 +1,57 @@
 {
   "users": {
-  "User0": {
-    "email": "iraon3493@gmail.com",
-    "password": "Creatine89!",
-    "re-enter": "Creatine89!",
-    "username": "iraon720"
+    "User0": {
+      "email": "iraon3493@gmail.com",
+      "password": "Creatine89!",
+      "re-enter": "Creatine89!",
+      "username": "iraon720"
+    },
+    "User1": {
+      "email": "pixel_gril12@gmail.com",
+      "password": "Picarelife14!",
+      "re-enter": "Picarelife14!",
+      "username": "Pixel_Gril12"
+    },
+    "User2": {
+      "email": "kris21@gmail.com",
+      "password": "Keepcalm23!",
+      "re-enter": "Keepcalm23!",
+      "username": "Expresslife2"
+    },
+    "User3": {
+      "email": "allen33@gmail.com",
+      "password": "Troyman4$",
+      "re-enter": "Troyman4$",
+      "username": "Troyallen33"
+    },
+    "User4": {
+      "email": "camo74@gmail.com",
+      "password": "Nick734?",
+      "re-enter": "Nick734?",
+      "username": "Camolife4L"
+    }
   },
-  "User1": {
-    "email": "pixel_gril12@gmail.com",
-    "password": "Picarelife14!",
-    "re-enter": "Picarelife14!",
-    "username": "Pixel_Gril12"
-  },
-  "User2": {
-    "email": "kris21@gmail.com",
-    "password": "Keepcalm23!",
-    "re-enter": "Keepcalm23!",
-    "username": "Expresslife2"
-  },
-  "User3": {
-    "email": "allen33@gmail.com",
-    "password": "Troyman4$",
-    "re-enter": "Troyman4$",
-    "username": "Troyallen33"
-  },
-  "User4": {
-    "email": "camo74@gmail.com",
-    "password": "Nick734?",
-    "re-enter": "Nick734?",
-    "username": "Camolife4L"
+  "posts": {
+    "User0": {
+      "username": "iraon720",
+      "Content": "I love life"
+    },
+    "User1": {
+      "username": "Pixel_Gril12",
+      "Content": "I love life"
+    },
+    "User2": {
+      "username": "Expresslife2",
+      "Content": "I'm not in the best mood today"
+    },
+
+    "User3": {
+      "username": "Troyallen33",
+      "Content": "I can't believe the Dolphins lost by 3 points."
+    },
+    "User4": {
+      "username": "Camolife4L",
+      "Content": "I can't wait for hunting season!"
+    }
   }
-}
-  "posts"
 }
