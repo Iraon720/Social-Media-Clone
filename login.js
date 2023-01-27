@@ -56,35 +56,35 @@ function browserValidation() {
   }
   return null;
 }
+//Try & Catch
 loginBtnD.addEventListener('click', handleLogin);
-
-async function handleLogin(e) {
-  e.preventDefault();
-  e.stopPropagation();
-
-  window.location.href = 'dashboard.html';
-}
 const expressUser = {
   username: username.value,
   password: password.value,
 };
-try {
-  const validateError = browserValidation();
-  if (validateError) {
-    throw Error(validateError);
+async function handleLogin(e) {
+  e.preventDefault();
+  e.stopPropagation();
+
+  try {
+    const validateError = browserValidation();
+    if (validateError) {
+      throw Error(validateError);
+    }
+
+    const userExists = await retrieveUser(expressUser);
+    if (!userExists.ok) {
+      throw Error('Error retrieving user');
+    }
+    const databaseExistence = await userExists.json();
+    if (!databaseExistence) {
+      throw Error('User does not exist');
+    }
+    if (databaseExistence) {
+      localStorage.setItem('userInfo', JSON.stringify(databaseExistence));
+      location.replace('/dashboard.html');
+    }
+  } catch (error) {
+    alert(error);
   }
-  const userExists = await retrieve(expressUser);
-  if (!checkExistence.ok) {
-    throw Error('Error retrieving user');
-  }
-  const databaseExistence = await userExists.json();
-  if (!databaseExistence) {
-    throw Error('User does not exist');
-  }
-  if (databaseExistence) {
-    localStorage.setItem('userInfo', JSON.stringify(databaseExistence));
-    location.replace('/dashboard.html');
-  }
-} catch (error) {
-  alert(error);
 }
