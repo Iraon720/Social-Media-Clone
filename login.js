@@ -1,18 +1,5 @@
-//  Users = [
-//   {
-//     username: 'iraon720',
-//     password: 'creatine89!',
-//   },
-//   {
-//     username: 'Pixel_Gril12',
-//     password: 'Picarelife14!',
-//   },
-//   {
-//     username: 'Expresslife2',
-//     password: 'Keepcalm23!',
-//   },
-// ];
-const User_URL = 'https://twitter-clone-44098-default-rtdb.firebaseio.com/';
+const User_URL =
+  'https://twitter-clone-44098-default-rtdb.firebaseio.com/users';
 const EXT = '.json';
 
 //Login Mobile
@@ -20,13 +7,13 @@ const username = document.getElementById('Email');
 const password = document.getElementById('password');
 const loginBtnD = document.getElementById('login-btnD');
 
-username.addEventListener('keyup', (e) => {
-  console.log(username.value);
-});
+// username.addEventListener('keyup', (e) => {
+//   console.log(username.value);
+// });
 
-password.addEventListener('keyup', (e) => {
-  console.log(password.value);
-});
+// password.addEventListener('keyup', (e) => {
+//   console.log(password.value);
+// });
 
 //Validation
 function browserValidation() {
@@ -71,57 +58,3 @@ function handleLogin(e) {
 
   window.location.href = 'dashboard.html';
 }
-
-//Sign Up
-// const emailNew = document.getElementById('Email-signup');
-// const passwordNew = document.getElementById('password-signup');
-// const usernameNew = document.getElementById('username-signup');
-//UUID
-function createUUID() {
-  return(
-    Math.random().toString(16).substring(3,12) +
-    Math.random().toString(16).substring(3,12)
-  );
-}
-function signupData(){
-  let newUserObj = {
-    email: emailNew.value,
-    password: passwordNew.value,
-    repassword: repasswordNew.value
-    username: usernameNew.value,
-    user: createUUID(),
-    
-  }
-  return newUserObj;
-}
-//Adding new users
-function createNewUser(usernameNew, emailNew, passwordNew) {
-  fetch('${User_URL}${EXT}', {
-    method: 'post',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({ ...emailNew }),
-    body: JSON.stringify({ ...passwordNew }),
-    body: JSON.stringify({ ...usernameNew }),
-  })
-    .then((resp) => {
-      resp.json();
-      console.log(' first then ');
-    })
-    .then((data) => console.log('data', data));
-  }
-
-  function resetSignup(){
-    emailNew.value = '';
-    passwordNew.value = '';
-    repasswordNew.value = '';
-    usernameNew.value = '';
-  }
-
-  //functionality to button
-  const signupBtn = document.getElementsByClassName('signup')
-
-signupBtn.addEventListener('click', handleSignup);
-function handleSignup() {
-  
