@@ -73,22 +73,55 @@ function handleLogin(e) {
 }
 
 //Sign Up
-const emailNew = document.getElementById('Email-signup');
-const passwordNew = document.getElementById('password-signup');
-const usernameNew = document.getElementById('username-signup');
-
+// const emailNew = document.getElementById('Email-signup');
+// const passwordNew = document.getElementById('password-signup');
+// const usernameNew = document.getElementById('username-signup');
+//UUID
+function createUUID() {
+  return(
+    Math.random().toString(16).substring(3,12) +
+    Math.random().toString(16).substring(3,12)
+  );
+}
+function signupData(){
+  let newUserObj = {
+    email: emailNew.value,
+    password: passwordNew.value,
+    repassword: repasswordNew.value
+    username: usernameNew.value,
+    user: createUUID(),
+    
+  }
+  return newUserObj;
+}
+//Adding new users
 function createNewUser(usernameNew, emailNew, passwordNew) {
   fetch('${User_URL}${EXT}', {
-    method: 'put',
+    method: 'post',
     headers: {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({ ...emailNew }),
+    body: JSON.stringify({ ...passwordNew }),
+    body: JSON.stringify({ ...usernameNew }),
   })
     .then((resp) => {
       resp.json();
       console.log(' first then ');
     })
     .then((data) => console.log('data', data));
-  console.log('Profile Name: ', usernameNew);
-}
+  }
+
+  function resetSignup(){
+    emailNew.value = '';
+    passwordNew.value = '';
+    repasswordNew.value = '';
+    usernameNew.value = '';
+  }
+
+  //functionality to button
+  const signupBtn = document.getElementsByClassName('signup')
+
+signupBtn.addEventListener('click', handleSignup);
+function handleSignup() {
+  
